@@ -17,7 +17,7 @@ function gMakeSheet(mediaAttribute) {
 }
 
 // Add rules to any number of sheets.
-function gAddStyleToSheet(s, selector, rules, index) {
+function gAddStyleToSheet(s, selector, rules, index = 0) {
 	if(s == 'all' || s === null) {
 		s = [sheet, smSheet, mdSheet, lgSheet];
 	} else {
